@@ -1,0 +1,35 @@
+$black-21: #212121;
+$primary: #6da84a;
+nav {
+  li {
+    a {
+      // color: $black-21;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .dropdown-toggle::after {
+    content: none;
+  }
+
+  .dropdown {
+    &:hover {
+      .dropdown-menu {
+        display: flex;
+        width: 40em;
+        flex-wrap: wrap;
+      }
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+        width: 40em;
+        flex-wrap: wrap;
+      }
+    .dropdown-item {
+      width: 20%;
+    }
+  }
+}
