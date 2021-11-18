@@ -35,7 +35,9 @@
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "src/styles.scss"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.min.js"]
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -104,6 +106,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "maineshop:build:production",
+            "firebaseProject": "limas-99199",
+            "firebaseHostingSite": "shoplimas"
           }
         }
       }

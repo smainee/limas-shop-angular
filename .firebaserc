@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "limas-99199": {
+      "hosting": {
+        "maineshop": [
+          "shoplimas"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "limas-99199"
+  }
+}
