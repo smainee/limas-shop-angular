@@ -2,14 +2,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "paths": {
       "@routes/*": [
-        "src/app/routes/*"
+        "app/routes/*"
       ],
       "@services/*": [
-        "src/app/services/*"
+        "app/services/*"
       ]
+      
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

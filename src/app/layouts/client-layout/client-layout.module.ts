@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ClientLayoutRoutingModule } from './client-layout-routing.module';
 import { ClientLayoutComponent } from './client-layout.component';
-import { ComponentsModule } from 'src/app/components/components.module';
+import { ComponentsModule } from 'app/components/components.module';
 
 
 @NgModule({

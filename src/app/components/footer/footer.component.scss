@@ -1,80 +1,80 @@
-$black-21: #212121;
-$primary: #6da84a;
-$grey: #707070;
-hr {
-  border: none;
-  border-bottom: 3px dotted rgba(112, 112, 112, 0.51);
-}
+// $black-21: #212121;
+// $primary: #6da84a;
+// $grey: #707070;
+// hr {
+//   border: none;
+//   border-bottom: 3px dotted rgba(112, 112, 112, 0.51);
+// }
 
-footer {
-  ul {
-    padding-inline-start: 0px;
-  }
+// footer {
+//   ul {
+//     padding-inline-start: 0px;
+//   }
 
-  .footer-content {
-    padding: 0.5rem 1rem;
+//   .footer-content {
+//     padding: 0.5rem 1rem;
 
-    .icon-social {
-      display: flex;
+//     .icon-social {
+//       display: flex;
 
-      li a {
-        padding-right: 0.5em;
-        color: $primary;
-        font-size: 2em;
-      }
-    }
+//       li a {
+//         padding-right: 0.5em;
+//         color: $primary;
+//         font-size: 2em;
+//       }
+//     }
 
-    .footer-link {
-      h5 {
-        font-weight: 500;
-        font-size: 1.5em;
-      }
+//     .footer-link {
+//       h5 {
+//         font-weight: 500;
+//         font-size: 1.5em;
+//       }
 
-      li {
-        line-height: 2em;
+//       li {
+//         line-height: 2em;
 
-        i {
-          padding-right: 1em;
-        }
+//         i {
+//           padding-right: 1em;
+//         }
 
-        a {
-          color: $primary;
-          font-weight: 300;
+//         a {
+//           color: $primary;
+//           font-weight: 300;
 
-          &:hover {
-            color: $black-21;
-            font-weight: 500;
-            text-decoration: underline dotted rgba(112, 112, 112, 0.51);
-          }
-        }
-      }
-    }
-  }
+//           &:hover {
+//             color: $black-21;
+//             font-weight: 500;
+//             text-decoration: underline dotted rgba(112, 112, 112, 0.51);
+//           }
+//         }
+//       }
+//     }
+//   }
 
-  .footer-mail {
-    padding: 3em 4em;
-    background-image: url("../../../assets/img/pattern.png");
+//   .footer-mail {
+//     padding: 3em 4em;
+//     background-image: url("../../../assets/img/pattern.png");
 
-    input {
-      margin-right: 0.75em;
-        padding: 0.4em 1em;
-        width: 50%;
-        border: 1px solid #fff;
-        transition: all 0.2s linear;
-        &:focus {
-            outline: none;
-            border-color: $primary;
-        }
-    }
+//     input {
+//       margin-right: 0.75em;
+//         padding: 0.4em 1em;
+//         width: 50%;
+//         border: 1px solid #fff;
+//         transition: all 0.2s linear;
+//         &:focus {
+//             outline: none;
+//             border-color: $primary;
+//         }
+//     }
 
-    .text-small{
-        color: $grey;
-        a{
-            color: $primary;
-            &:hover {
-                text-decoration: underline dotted rgba(112, 112, 112, 0.51);
-            }
-        }
-    }
-  }
-}
+//     .text-small{
+//         color: $grey;
+//         a{
+//             color: $primary;
+//             &:hover {
+//                 text-decoration: underline dotted rgba(112, 112, 112, 0.51);
+//             }
+//         }
+//     }
+//   }
+// }

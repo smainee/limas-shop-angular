@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CrudService } from 'src/app/services/crud.service';
+import { CrudService } from '@services/crud.service';
 
 @Component({
   selector: 'app-crud',

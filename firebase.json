@@ -3,7 +3,8 @@
     "target": "maineshop",
     "public": "dist/maineshop",
     "ignore": [
-      "**/.*"
+      "**/.*",
+      "**/node_modules/**"
     ],
     "headers": [
       {

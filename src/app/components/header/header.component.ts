@@ -8,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   public isMenuCollapsed = true;
   public collapsed = true;
+  public isSearchBarOpend = false;
   constructor() { }
 
   ngOnInit(): void {
   }
   
+  public toggleMenuCollap(){
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
+
+  public toggleSearchBar(){
+    this.isSearchBarOpend = !this.isSearchBarOpend;
+  }
 
 }
