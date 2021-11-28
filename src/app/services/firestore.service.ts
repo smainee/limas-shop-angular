@@ -10,7 +10,22 @@ export class FireStoreService {
   public get(collectionName: string): Observable<any> {
     return this.firestore
       .collection<any>(collectionName)
-      .valueChanges()
+      .snapshotChanges()
+      .pipe(
+        map((actions) =>
+          actions.map((a) => {
+            const data = { data: a.payload.doc.data() };
+            const id = a.payload.doc.id;
+            return { id, ...data };
+          })
+        )
+      );
+  }
+
+  public getById(collectionName: string, id: string): Observable<any> {
+    return this.firestore
+      .collection<any>(`${collectionName}/${id}`)
+      .snapshotChanges()
       .pipe(
         map((actions) =>
           actions.map((a) => {
