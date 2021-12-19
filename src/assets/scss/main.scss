@@ -10,12 +10,18 @@
 @import "base/general";
 @import "base/reuse";
 
+@import "pages/home";
+
 @import "table/theme.css";
 
 @import "partials/forms";
 @import "partials/authentication";
 @import "partials/buttons";
 @import "partials/navbar";
+@import "partials/cards";
+@import "partials/borders";
+
+@import "utilities/text";
 
 @import "~bootstrap/scss/bootstrap.scss";
 @import '~ngx-toastr/toastr';

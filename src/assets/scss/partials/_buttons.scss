@@ -1,4 +1,83 @@
-
-.btn{
-	border-radius: 0 !important;
+.btn {
+  border-radius: 0 !important;
+  font-weight: 600 !important;
 }
+
+.btn-circle {
+  border-radius: 100%;
+  // height: 2.5rem;
+  // width: 2.5rem;
+  border: none;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &.btn-sm {
+    height: 1.8rem;
+    width: 1.8rem;
+    font-size: 0.75rem;
+  }
+
+  &.btn-lg {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.35rem;
+  }
+}
+
+.notification {
+  position: relative;
+
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: $secondary;
+    color: white;
+    font-weight: 400;
+    font-size: x-small;
+  }
+
+  .badge-toggle {
+    border-radius: 50%;
+    background-color: $secondary;
+    color: white;
+	font-size: smaller;
+  }
+}
+
+
+//   .btn-icon-split {
+// 	padding: 0;
+// 	overflow: hidden;
+// 	display: inline-flex;
+// 	align-items: stretch;
+// 	justify-content: center;
+// 	.icon {
+// 	  background: fade-out($black, .85);
+// 	  display: inline-block;
+// 	  padding: $btn-padding-y $btn-padding-x;
+// 	}
+// 	.text {
+// 	  display: inline-block;
+// 	  padding: $btn-padding-y $btn-padding-x;
+// 	}
+// 	&.btn-sm {
+// 	  .icon {
+// 		padding: $btn-padding-y-sm $btn-padding-x-sm;
+// 	  }
+// 	  .text {
+// 		padding: $btn-padding-y-sm $btn-padding-x-sm;
+// 	  }
+// 	}
+// 	&.btn-lg {
+// 	  .icon {
+// 		padding: $btn-padding-y-lg $btn-padding-x-lg;
+// 	  }
+// 	  .text {
+// 		padding: $btn-padding-y-lg $btn-padding-x-lg;
+// 	  }
+// 	}
+//   }

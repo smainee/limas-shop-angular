@@ -17,7 +17,8 @@ header {
   }
 }
 
-nav {
+.navbar {
+  padding: 0 !important;
   background-color: #fff;
   li {
     a {
@@ -110,5 +111,11 @@ nav {
     .dropdown-item {
       width: 20%;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg{
+    justify-content: space-between !important;
   }
 }

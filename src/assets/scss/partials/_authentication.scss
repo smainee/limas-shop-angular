@@ -1,33 +1,53 @@
 .auth-main {
   background-color: $light-green;
   background-size: cover;
+  min-height: 100%;
   height: 100vh;
-  overflow: hidden;
+  bottom: 0;
+
   .auth-content {
     margin: 2em 7em;
-    padding: 1em 1em;
+    padding: 1em;
     background-color: $white;
     top: 50%;
     left: 50%;
+
+    h4 {
+      font-weight: 800;
+    }
+
+    hr {
+      margin: 1.5em auto;
+      width: 50%;
+      align-items: center;
+    }
+
     img {
       height: 70vh;
       width: 100%;
     }
+
     .btn {
       width: 8em !important;
     }
+
     .form-group {
       padding-right: 2em;
       margin-left: 1em;
-      label{
+      margin-bottom: 1em !important;
+
+      label {
         font-weight: 500;
         color: $font-color;
+        margin-bottom: 0;
       }
+
       .text-field {
-        
+
         position: relative;
+
         input {
-          width: 97%;
+          width: 100%;
           color: $primary;
           font-size: inherit;
           font-family: inherit;
@@ -38,7 +58,7 @@
           &:focus {
             outline: none;
 
-            ~ span {
+            ~span {
               transform: translate(-50%, 0) scaleX(1);
               opacity: 1;
             }
@@ -52,21 +72,93 @@
         span {
           position: absolute;
           bottom: 0;
-          left: 45%;
-          width: 90%;
+          left: 50%;
+          width: 100%;
           height: 1px;
           opacity: 0;
           background-color: $primary;
           transform-origin: center;
-          transform: translate(-45%, 0) scaleX(0);
+          transform: translate(-50%, 0) scaleX(0);
           transition: all 0.3s ease;
         }
+
+        .group-btn-auth {
+          margin: 1em 1em;
+        }
       }
-      
+
+      .forgot-link {
+        color: $danger;
+        font-weight: 400;
+        padding-right: 0.5em;
+
+        &:hover {
+          color: darken($danger, 1%);
+          cursor: pointer;
+          font-weight: 500;
+          text-decoration: underline dotted rgba(112, 112, 112, 0.51);
+        }
+
+      }
+
+      .custom-control-label {
+        font-weight: 400;
+      }
+
     }
   }
 }
 
+@media only screen and (max-width: $break-mobile) {
+  .auth-main {
+
+    .auth-content {
+      img {
+        display: none;
+      }
+
+      .forgot-link {
+        font-size: smaller;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $break-xsmall) {
+  .auth-main {
+
+    .auth-content {
+      margin: 2em 0 1em;
+
+      img {
+        display: none;
+      }
+
+      .forgot-link {
+        font-size: smaller;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: $break-small) {
+  .auth-main {
+    height: 60%;
+    .auth-content {
+      margin: 2em 1em;
+
+      .forgot-link {
+        font-size: smaller;
+      }
+    }
+  }
+
+}
 
 
-
+@media only screen and (max-width: $break-1024) {
+  .auth-main {
+    height: 170vh;
+  }
+}

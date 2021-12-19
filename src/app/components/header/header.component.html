@@ -1,17 +1,15 @@
-<header>
+<header class="shadow-sm bg-white sticky-top">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light mb-3">
-      <div class="col-lg-2 col-sm-10">
+    <nav class="navbar navbar-expand-lg navbar-light px-0">
+      <div class="col-lg-3 col-sm-12 d-flex justify-content-between align-items-center">
         <a class="navbar-brand" [routerLink]="'/home'">Li<span>ma</span>s</a>
-      </div>
-      <div class="col-lg-0 col-sm-2">
         <button class="navbar-toggler" type="button" (click)="toggleMenuCollap()">
           &#9776;
         </button>
       </div>
-      <div class="col-lg-6 col-sm-12">
-        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-          <ul class="navbar-nav">
+      <div class="col-lg-5 col-sm-12">
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" *ngIf="isMenuCollapsed">
+          <ul class="navbar-nav pl-lg-5 pl-sm-0">
             <li class="nav-item">
               <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active"
                 (click)="isMenuCollapsed = true">HOME</a>
@@ -38,8 +36,29 @@
             </li>
           </ul>
         </div>
+        <div [ngbCollapse]="isMenuCollapsed" *ngIf="isMenuCollapsed == false"
+          class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav pl-lg-5 pl-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active"
+                (click)="isMenuCollapsed = true">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="'/product'"
+                routerLinkActive="router-link-active" (click)="isMenuCollapsed = true">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="'/contact'" routerLinkActive="router-link-active"
+                (click)="isMenuCollapsed = true">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="'/contact'" routerLinkActive="router-link-active"
+                (click)="isMenuCollapsed = true">ABOUT LIMAS</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-lg-3 col-sm-12">
+      <div class="col-lg-4 col-sm-12">
         <div [ngbCollapse]="isMenuCollapsed" *ngIf="isMenuCollapsed"
           class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
@@ -50,37 +69,37 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/product'" routerLinkActive="router-link-active"><i
-                  class="fas fa-shopping-cart"></i></a>
+              <a class="nav-link notification" [routerLink]="'/cart'" routerLinkActive="router-link-active"><i
+                  class="fas fa-shopping-cart"></i><span class="badge">3</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/contact'" routerLinkActive="router-link-active"
-                (click)="isMenuCollapsed = true"><i class="far fa-heart"></i></a>
+              <a class="nav-link notification" [routerLink]="'/wishlist'" routerLinkActive="router-link-active"
+                (click)="isMenuCollapsed = true"><i class="far fa-heart"></i><span class="badge">1</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/auth'" routerLinkActive="router-link-active"
-                (click)="isMenuCollapsed = true"><i class="far fa-user"></i></a>
+              <a class="nav-link" [routerLink]="'/auth/login'" routerLinkActive="router-link-active"
+                ><i class="far fa-user"></i></a>
             </li>
           </ul>
         </div>
         <div [ngbCollapse]="isMenuCollapsed" *ngIf="isMenuCollapsed == false"
           class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
-            <li class="nav-item search-bar-toggle">
-              <a class="nav-link"><i class="fas fa-search"></i>Search</a>
+            <li class="nav-item d-flex flex-nowrap">
               <input class="form-control" type="text" placeholder="Search ...">
+              <a class="nav-link ml-2"><i class="fas fa-search"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/product'" routerLinkActive="router-link-active"
-                (click)="isMenuCollapsed = true"><i class="fas fa-shopping-cart"></i>Cart</a>
+              <a class="nav-link notification" [routerLink]="'/cart'" routerLinkActive="router-link-active"
+                (click)="isMenuCollapsed = true"><i class="fas fa-shopping-cart"></i>Cart<span class="badge-toggle float-right px-2">3</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/contact'" routerLinkActive="router-link-active"
-                (click)="isMenuCollapsed = true"><i class="far fa-heart"></i>Wishlist</a>
+              <a class="nav-link notification" [routerLink]="'/wishlist'" routerLinkActive="router-link-active"
+                (click)="isMenuCollapsed = true"><i class="far fa-heart"></i>Wishlist<span class="badge-toggle float-right px-2">1</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" [routerLink]="'/auth'" routerLinkActive="router-link-active"
-                (click)="isMenuCollapsed = true"><i class="far fa-user"></i>Account</a>
+                ><i class="far fa-user"></i>Account</a>
             </li>
           </ul>
         </div>

@@ -25,6 +25,16 @@ const routes: Routes = [
           import('@routes/contact/contact.module').then((m) => m.ContactModule),
       },
       {
+        path: 'wishlist',
+        loadChildren: () =>
+          import('@routes/wishlist/wishlist.module').then((m) => m.WishlistModule),
+      },
+      {
+        path: 'cart',
+        loadChildren: () =>
+          import('@routes/cart/cart.module').then((m) => m.CartModule),
+      },
+      {
         path: 'crud',
         loadChildren: () =>
           import('@routes/crud/crud.module').then((m) => m.CrudModule),

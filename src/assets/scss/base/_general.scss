@@ -437,6 +437,19 @@ li {
   list-style-type: none;
 }
 
+.icon-social {
+  display: flex;
+
+  a {
+    padding-right: 0.5em;
+    color: $color-primary;
+    font-size: 2em;
+
+    &:hover {
+      color: darken($color-primary, 5%)
+    }
+  }
+}
 
 footer {
   ul {
@@ -446,19 +459,7 @@ footer {
   .footer-content {
     padding: 0.5rem 1rem;
 
-    .icon-social {
-      display: flex;
-
-      li a {
-        padding-right: 0.5em;
-        color: $color-primary;
-        font-size: 2em;
-
-        &:hover {
-          color: darken($color-primary, 5%)
-        }
-      }
-    }
+    
 
     .footer-link {
       h5 {
@@ -518,62 +519,10 @@ footer {
   }
 }
 
-// nav {
-//   li {
-//     a {
-//         color: $dark-black !important;
-//       &:hover {
-//         color: $primary !important;
-//       }
-//     }
-//   }
-
-//   .dropdown-toggle::after {
-//     content: none;
-//   }
-
-//   .dropdown {
-//     &:hover {
-//       .dropdown-menu {
-//         display: flex;
-//         width: 40em;
-//         flex-wrap: wrap;
-//       }
-//     }
-
-//     .dropdown-menu.show {
-//       display: flex;
-//       width: 40em;
-//       flex-wrap: wrap;
-//     }
-
-//     .dropdown-item {
-//       width: 20%;
-//     }
-//   }
-// }
-
-
-// footer {
-//     padding: 0 30px;
-//     padding-bottom: 15px;
-//     position: absolute;
-//     right: 0;
-
-//     @include max-screen($break-small) {
-//         position: relative;
-//         text-align: center;
-//     }
-// }
-
-// $black-21: #212121;
-// $primary: #6da84a;
-// $grey: #707070;
 hr {
   border: none;
   border-bottom: 3px dotted rgba(112, 112, 112, 0.51);
 }
-
 
 .copyright {
   margin-bottom: 0;
@@ -586,6 +535,7 @@ hr {
   // border-color: $grey-300;
   padding: 6px 18px;
 }
+
 
 .btn-toolbar>.btn-group {
   @extend .m-l-5 !optional;
@@ -613,3 +563,4 @@ hr {
     display: none;
   }
 }
+

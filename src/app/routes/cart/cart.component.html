@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="heading-title my-4">
+    <div class="text-center">
+      <h4>CART</h4>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-sm-12 mb-5">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantily</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span><i class="far fa-times-circle"></i></span></td>
+              <td class="d-flex ">
+                <img src="assets/img/loginImg.png" width="100">
+                <a [routerLink]="['/']" routerLinkActive="router-link-active" class="ml-3 text-primary">T-shirt
+                  blackpinkinyourarea</a>
+              </td>
+              <td>$12.2</td>
+              <td><input type="number" class="form-control" min="1" step="1" value="1" style="width:4em"></td>
+              <td>$12.2</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <button class="btn btn-outline-primary float-left"><i class="fas fa-long-arrow-alt-left"></i> Continue
+          shopping</button>
+        <button class="btn btn-primary float-right">Update cart</button>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12">
+      <div class="total-cart border p-3 bg-light">
+        <h5 class="text-center text-primary">TOTAL CART</h5>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <p>Subtotal</p>
+          <p>$12.22</p>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-4">
+            <p>Delivery</p>
+          </div>
+          <div class="col-8 text-right">
+            <p class="mb-1">Flat rate: <span class="text-gray-600 font-weight-bolder">Free ship</span></p>
+            <a class="text-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+              aria-controls="collapseExample"><i class="fas fa-truck"></i> Calculate shipping</a>
+            <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+              <div class="card mt-3">
+                <div class="card-body">
+                  <form>
+                    <select name="city" class="custom-select mb-3">
+                      <option selected>Select city</option>
+                      <option value="volvo">Ho Chi Minh</option>
+                      <option value="fiat">Ba Ria Vung Tau</option>
+                      <option value="audi">Lam Dong</option>
+                    </select>
+                    <br>
+                    <select name="" class="custom-select">
+                      <option selected>Select district</option>
+                      <option value="volvo">Ho Chi Minh</option>
+                      <option value="fiat">Ba Ria Vung Tau</option>
+                      <option value="audi">Lam Dong</option>
+                    </select>
+                    <button class="btn btn-primary float-left mt-3" type="submit">Apply</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div>
+          <form class="form-inline d-flex flex-nowrap justify-content-between">
+            <input type="text" class="form-control mr-2 w-100" placeholder="Enter voucher code">
+            <button class="btn btn-primary" type="submit">Apply</button>
+          </form>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <h4>TOTAL</h4>
+          <h4>$12.21</h4>
+        </div>
+       
+      </div>
+      <button class="btn btn-primary btn-block text-center mt-3">CHECKOUT</button>
+    </div>
+  </div>
+</div>

@@ -1,16 +1,20 @@
 <div class="auth-content">
   <div class="row">
-    <div class="col-lg-6 col-sm-6">
+    <div class="col-lg-6">
       <img src="assets/img/loginImg.png" alt="">
     </div>
-    <div class="col-lg-6 col-sm-6">
-      <h4 class="text-center mb-4">LOGIN</h4>
-      <form>
+    <div class="col-lg-6 col-sm-12">
+      <h4 class="text-center my-4">LOG IN</h4>
+      <form [formGroup]="userForm">
         <div class="form-group">
           <label for="email">Email</label>
           <div class="text-field">
-            <input type="text" formControlName="email" id="email" placeholder="Enter your email" />
+            <input type="email" formControlName="email" id="email" placeholder="Enter your email" />
             <span></span>
+          </div>
+          <div *ngIf="(email?.dirty || email?.touched) && email?.invalid" class="text-danger">
+            <small *ngIf="u.email.errors?.required">Email address is required</small>
+            <small *ngIf="u.email.errors?.email">Email address is invalid</small>
           </div>
         </div>
         <div class="form-group">
@@ -19,23 +23,30 @@
             <input type="password" formControlName="password" id="password" placeholder="Enter your password" />
             <span></span>
           </div>
+          <div *ngIf="(password?.dirty || password?.touched) && password?.invalid" class="text-danger">
+            <small *ngIf="u.password.errors?.required">Password is required</small>
+            <small *ngIf="u.password.errors?.minlength">Password must contain at least 6 characters</small>
+            <small *ngIf="u.password.errors?.pattern">Password must contain one digit, one special character</small>
+          </div>
         </div>
         <div class="form-group d-flex justify-content-between">
-          <div class="custom-control custom-checkbox float-left">
-            <input type="checkbox" class="custom-control-input" id="customCheck" name="rememberMe">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck" name="rememberMe"> 
             <label class="custom-control-label" for="customCheck">Remember me</label>
           </div>
-          <a class="forgotLink float-right">Forgot password</a>
+          <a class="forgot-link">Forgot password?</a>
         </div>
         <div class="form-group text-center d-flex justify-content-center">
             <button class="btn btn-primary">Đăng nhập</button> &nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="btn btn-secondary">Đăng ký</button>
+            <button (click)="goToSignup()" class="btn btn-secondary">Đăng ký</button>
         </div>
       </form>
       <hr>
-      <div class="icon-social">
-
-      </div>
+      <h6 class="text-center">Hoặc</h6>
+        <div class="icon-social text-center d-flex justify-content-center">
+            <a [routerLink]="['/.']" routerLinkActive="router-link-active" ><i class="fab fa-facebook"></i></a>
+            <a [routerLink]="['/.']" routerLinkActive="router-link-active"><i class="fab fa-google"></i></a>
+        </div>
     </div>
   </div>
 </div>

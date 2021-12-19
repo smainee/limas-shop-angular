@@ -8,7 +8,8 @@ import { LoginComponent } from './login/login.component'
 import { RouterModule, Routes } from '@angular/router'
 import { ReactiveFormsModule } from '@angular/forms'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
-import { ComponentsModule } from 'app/components/components.module'
+import { ComponentsModule } from 'app/components/components.module';
+import { RegisterComponent } from './register/register.component'
 
 const routes: Routes = [
   {
@@ -17,12 +18,13 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
+      { path: 'signup', component: RegisterComponent },
     ],
   },
 ]
 
 @NgModule({
-  declarations: [AuthLayoutComponent, AuthenticationComponent, LoginComponent],
+  declarations: [AuthLayoutComponent, AuthenticationComponent, LoginComponent, RegisterComponent],
   imports: [
     CommonModule,
     AuthLayoutRoutingModule,
