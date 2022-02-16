@@ -1,0 +1,40 @@
+.name-page {
+  margin-left: 10em;
+}
+.product-category-list {
+  padding: 1em;
+  li {
+    padding-bottom: 1em;
+    a {
+      color: #6DA84A;
+    }
+  }
+
+
+}
+.product-filter-name, .product-offer-name, .product-category-name {
+  background-color: #F5F5F5;
+  color: black;
+  height:3em;
+  align-items: center;
+}
+.product-sort{
+  padding: 0 1em 0 1em
+}
+.product-card-detail {
+  height: 24em;
+  padding: 1em;
+
+  .product-card-detail-infor {
+    padding-top: 0.8em;
+  }
+}
+
+.product-offer-card {
+ padding: 1em 0 0.2em 0;
+}
+
+.pagination {
+  margin-top: 1em;
+}
+
