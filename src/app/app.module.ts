@@ -10,10 +10,11 @@ import { ToastrModule } from 'ngx-toastr';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from 'environments/environment';
+import { AboutUsComponent } from './routes/about-us/about-us.component';
 // import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 // import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AboutUsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

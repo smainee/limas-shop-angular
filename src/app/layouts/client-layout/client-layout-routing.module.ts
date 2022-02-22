@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '@routes/home/home.component';
 import { ClientLayoutComponent } from './client-layout.component';
+import { AboutUsModule } from '../../routes/about-us/about-us.module';
 
 const routes: Routes = [
   {
@@ -39,6 +40,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('@routes/crud/crud.module').then((m) => m.CrudModule),
       },
+      {
+        path: 'aboutus',
+        loadChildren: () =>
+        import('@routes/about-us/about-us.module').then((m) => m.AboutUsModule)
+      }
     ],
   },
 ];
