@@ -8,66 +8,83 @@
   <div class="row">
     <div class="col-lg-3 col-sm-12">
       <div class="product-category">
-        <h6 class="product-category-name d-flex justify-content-center">DANH MỤC SẢN PHẨM</h6>
+        <h6 class="product-category-name d-flex justify-content-center">CATEGORIES</h6>
         <ul class="product-category-list">
-          <li><a href=""> Hàng mới về (12) </a></li>
-          <li><a href=""> Giảm giá (12) </a></li>
-          <li><a href=""> Váy/Jumpsuit (12) </a></li>
-          <li><a href=""> Áo (12) </a></li>
-          <li><a href=""> Chân váy (12) </a></li>
-          <li><a href=""> Phụ kiện (12) </a></li>
+          <li><a href=""> News (12) </a></li>
+          <li><a href=""> Sales (12) </a></li>
+          <li><a href=""> Skirts/Jumpsuits (12) </a></li>
+          <li><a href=""> Shirts (12) </a></li>
+          <li><a href=""> Dresses (12) </a></li>
+          <li><a href=""> Accessories (12) </a></li>
         </ul>
       </div>
       <div class="product-filter">
-        <h6 class="product-filter-name d-flex justify-content-center">LỌC THEO GIÁ</h6>
+        <h6 class="product-filter-name d-flex justify-content-center">FILTER BY PRICE
+        </h6>
+        <div class="filter-content collapse show" id="collapse_3">
+          <div class="card-body">
+            <input type="range" class="custom-range" min="0" max="100" name="">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Min</label>
+                <input class="form-control" placeholder="0đ" type="number">
+              </div>
+              <div class="form-group text-right col-md-6">
+                <label>Max</label>
+                <input class="form-control" placeholder="500,000đ" type="number">
+              </div>
+            </div> <!-- form-row.// -->
+            <button class="btn btn-block btn-primary">Apply</button>
+          </div><!-- card-body.// -->
+        </div>
 
       </div>
       <div class="product-offer">
-        <h6 class="product-offer-name d-flex justify-content-center">SẢN PHẨM</h6>
+        <h6 class="product-offer-name d-flex justify-content-center">PRODUCTS</h6>
         <div class="col-lg-12" width="100%">
           <div class="product-offer-card row">
             <div class="col-lg-4">
-              <img src="assets/img/productImg.png" alt="" width="130%" height="100%">
+              <img src="assets/img/product_01.jpg" alt="" width="130%" height="100%">
             </div>
             <div class="col-lg-8 d-flex flex-column justify-content-center">
               <h6>Croptop Teenager</h6>
-              <p><del>480.000đ</del> 350.000đ</p>
+              <p><del>250.000đ</del> 200.000đ</p>
             </div>
           </div>
           <div class="product-offer-card row">
             <div class="col-lg-4">
-              <img src="assets/img/productImg.png" alt="" width="130%" height="100%">
+              <img src="assets/img/product_02.jpg" alt="" width="130%" height="100%">
             </div>
             <div class="col-lg-8 d-flex flex-column justify-content-center">
               <h6>Croptop Teenager</h6>
-              <p><del>480.000đ</del> 350.000đ</p>
+              <p><del>290.000đ</del> 150.000đ</p>
             </div>
           </div>
           <div class="product-offer-card row">
             <div class="col-lg-4">
-              <img src="assets/img/productImg.png" alt="" width="130%" height="100%">
+              <img src="assets/img/product_03.jpg" alt="" width="130%" height="100%">
             </div>
             <div class="col-lg-8 d-flex flex-column justify-content-center">
               <h6>Croptop Teenager</h6>
-              <p><del>480.000đ</del> 350.000đ</p>
+              <p><del>270.000đ</del> 180.000đ</p>
             </div>
           </div>
           <div class="product-offer-card row">
             <div class="col-lg-4">
-              <img src="assets/img/productImg.png" alt="" width="130%" height="100%">
+              <img src="assets/img/product_04.jpg" alt="" width="130%" height="100%">
             </div>
             <div class="col-lg-8 d-flex flex-column justify-content-center">
               <h6>Croptop Teenager</h6>
-              <p><del>480.000đ</del> 350.000đ</p>
+              <p><del>280.000đ</del> 170.000đ</p>
             </div>
           </div>
           <div class="product-offer-card row">
             <div class="col-lg-4">
-              <img src="assets/img/productImg.png" alt="" width="130%" height="100%">
+              <img src="assets/img/product_05.jpg" alt="" width="130%" height="100%">
             </div>
             <div class="col-lg-8 d-flex flex-column justify-content-center">
               <h6>Croptop Teenager</h6>
-              <p><del>480.000đ</del> 350.000đ</p>
+              <p><del>300.000đ</del> 130.000đ</p>
             </div>
           </div>
         </div>
@@ -75,98 +92,204 @@
     </div>
     <div class="col-lg-9 col-sm-12">
       <div class="row product-sort d-flex justify-content-between">
-        <h6>Hiển thị 1-9 trong 40 kết quả</h6>
+        <h6>Showing 1-9 of 40 results</h6>
         <div>
           <form>
             <select name="city" class="custom-select mb-3">
-              <option selected disabled value="">Thứ tự sắp xếp</option>
-              <option>Giá tăng dần</option>
-              <option>Giá giảm dần</option>
+              <option selected disabled value="">Sort order
+              </option>
+              <option>Price increase
+              </option>
+              <option>Price reduce
+              </option>
             </select>
           </form>
         </div>
       </div>
       <div class="row product-card">
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_02.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Linen Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_03.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Lyly Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_04.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Croptop Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_05.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Sea Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_06.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Rose Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_02.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Sunshine Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_08.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Anine Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_09.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Pure Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
-        <div class="product-card-detail col-lg-4 col-sm-6">
-          <img src="assets/img/productImg.png" alt="" height="85%" width="100%">
-          <div class="product-card-detail-infor ">
-            <h6 class="d-flex justify-content-center">Croptop </h6>
-            <p class="d-flex justify-content-center">180.000đ</p>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card-product text-center">
+            <div class="card-item">
+              <img class="card-img-top" src="assets/img/product_10.jpg" width="100%">
+              <div class="btn-item-icon">
+                <ul>
+                  <li><button class="btn-circle mb-2"><i class="fas fa-eye text-primary"></i></button></li>
+                  <li><button class="btn-circle"><i class="fas fa-heart text-primary"></i></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-title mt-3">
+              <a href="#" class="stretched-link">
+                <h6>Shimmer Shirt</h6>
+              </a>
+              <p>225.000đ</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="pagination d-flex justify-content-center">
-        <nav>
-          <ul class="pagination d-flex justify-content-center flex-wrap pagination-rounded-flat pagination-success">
-            <li class="page-item"><a class="page-link" href="#" data-abc="true"><i class="fa fa-angle-left"></i></a>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#" data-abc="true">1</a></li>
-            <li class="page-item"><a class="page-link" href="#" data-abc="true">2</a></li>
-            <li class="page-item"><a class="page-link" href="#" data-abc="true">3</a></li>
-            <li class="page-item"><a class="page-link" href="#" data-abc="true">4</a></li>
-            <li class="page-item"><a class="page-link" href="#" data-abc="true"><i class="fa fa-angle-right"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul class="pagination d-flex justify-content-center flex-wrap pagination-rounded-flat pagination-success">
+          <li class="page-item"><a class="page-link" href="#" data-abc="true"><i class="fa fa-angle-left"></i></a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#" data-abc="true">1</a></li>
+          <li class="page-item"><a class="page-link" href="#" data-abc="true">2</a></li>
+          <li class="page-item"><a class="page-link" href="#" data-abc="true">3</a></li>
+          <li class="page-item"><a class="page-link" href="#" data-abc="true">4</a></li>
+          <li class="page-item"><a class="page-link" href="#" data-abc="true"><i class="fa fa-angle-right"></i></a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-
-
   </div>

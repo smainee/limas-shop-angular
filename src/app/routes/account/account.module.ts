@@ -1,7 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AccountComponent } from './account.component';
+import { RouterModule, Routes } from '@angular/router';
 
+import { AccountComponent } from './account.component';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: AccountComponent
+  }
+]
 
 
 @NgModule({
@@ -9,7 +17,8 @@ import { AccountComponent } from './account.component';
     AccountComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(routes)
   ]
 })
 export class AccountModule { }

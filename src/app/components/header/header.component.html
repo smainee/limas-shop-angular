@@ -1,13 +1,13 @@
 <header class="shadow-sm bg-white sticky-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light px-0">
-      <div class="col-lg-3 col-sm-12 d-flex justify-content-between align-items-center">
+      <div class="col-lg-3 col-sm-12 d-flex justify-content-around align-items-center">
         <a class="navbar-brand" [routerLink]="'/home'">Li<span>ma</span>s</a>
         <button class="navbar-toggler" type="button" (click)="toggleMenuCollap()">
           &#9776;
         </button>
       </div>
-      <div class="col-lg-5 col-sm-12">
+      <div class="col-lg-5 col-sm-12 ">
         <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" *ngIf="isMenuCollapsed">
           <ul class="navbar-nav pl-lg-5 pl-sm-0">
             <li class="nav-item">
@@ -31,7 +31,7 @@
                 (click)="isMenuCollapsed = true">CONTACT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/aboutus'" routerLinkActive="router-link-active"
+              <a class="nav-link" [routerLink]="'/about-us'" routerLinkActive="router-link-active"
                 (click)="isMenuCollapsed = true">ABOUT LIMAS</a>
             </li>
           </ul>
@@ -70,11 +70,11 @@
             </li>
             <li class="nav-item">
               <a class="nav-link notification" [routerLink]="'/cart'" routerLinkActive="router-link-active"><i
-                  class="fas fa-shopping-cart"></i><span class="badge">3</span></a>
+                  class="fas fa-shopping-cart"></i><span class="badge">1</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link notification" [routerLink]="'/wishlist'" routerLinkActive="router-link-active"
-                (click)="isMenuCollapsed = true"><i class="far fa-heart"></i><span class="badge">1</span></a>
+                (click)="isMenuCollapsed = true"><i class="far fa-heart"></i><span class="badge">3</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" [routerLink]="'/auth/login'" routerLinkActive="router-link-active"

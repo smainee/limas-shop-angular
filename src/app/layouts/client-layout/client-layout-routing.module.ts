@@ -1,8 +1,10 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from '@routes/home/home.component';
-import { ClientLayoutComponent } from './client-layout.component';
+
 import { AboutUsModule } from '../../routes/about-us/about-us.module';
+import { ClientLayoutComponent } from './client-layout.component';
+import { HomeComponent } from '@routes/home/home.component';
+import { NgModule } from '@angular/core';
+import { ProductDetailModule } from '../../routes/product-detail/product-detail.module';
 
 const routes: Routes = [
   {
@@ -41,10 +43,15 @@ const routes: Routes = [
           import('@routes/crud/crud.module').then((m) => m.CrudModule),
       },
       {
-        path: 'aboutus',
+        path: 'about-us',
         loadChildren: () =>
         import('@routes/about-us/about-us.module').then((m) => m.AboutUsModule)
-      }
+      },
+      {
+        path: 'account',
+        loadChildren: () =>
+          import('@routes/account/account.module').then((m) => m.AccountModule),
+      },
     ],
   },
 ];
